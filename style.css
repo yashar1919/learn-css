@@ -1,0 +1,198 @@
+body {
+  background-color: #f4f4f4;
+  color: #555555;
+
+  font-weight: normal;
+  font-size: 15px;
+  font-family: arial, helvetica, sans-serif;
+
+  /* in khat mosavi ba 3 khatte bala ast */
+  font: normal 15px arial, helvetica, sans-serif;
+
+  line-height: 20px; /* in khat beine khat b khate matn haye body mese paragraf ha, fasele mindaze */
+  margin: 0;
+}
+
+a {
+  text-decoration: none; /* underline k zire link ha b soorate default miofte ro ba in khat, hazf krdim */
+  color: #17d6e0; /* range link ro ham hamintori mishe taghir dad */
+}
+
+/* hover bara in hast k vaghti mouse mire rooye element, ye ettefaghi biofte k inja ma goftim, rangesh avaz she */
+a:hover {
+  color: #bc36f2;
+}
+
+/* in vizhegi bara in has k vaghti roosh click mishe, ye lahze heyne click, rangesh avaz mishe */
+a:active {
+  color: blue;
+}
+
+/* in attribute bara in has k har linki k roosh click shod, baad az on rangesh avaz beshe k befahmim on ro visit kardim o didimesh */
+/* a:visited{
+	color:green;
+}
+*/
+
+/* ID & CLASS:
+ID unique has o fght yekbar va ba yek esm va rooye yek element ejra mishe. amma Class mitoone unique nabashe
+va chandin element az yek Class estefade konn k style haye moshabehi dashte bashan. */
+.container {
+  width: 80%; /* vaghti b jaye "px" az "%" estefade beshe, b soorate dynamic margin ro too har size roayat mikone o size div va matn ro kam o ziad mikone. agar az "px" estefade karde boodm, vaghti safhe koocik mishod, matn ham dg namayesh dde nmishod o ye ghesmat haiish hazf mishod. */
+  margin: auto;
+}
+
+
+/* classe button sakhtim k harjaye dg too site dokme dashtim, fowran biaim o az hamin class estefade konim k dokme hamoon hamashoon ye shekl beshan */
+.button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+}
+
+
+/* in ghesmat baraye ine k vaghti mouse miad roo dokme submit, range dokme avaz she */
+.button:hover {
+  background-color: #54E22D;
+  color: #1E1F1E;
+}
+
+
+/* baraye in has k floatinge site ro k gozashte boodim roo left, b halate default bargardoonim */
+.clr {
+  clear: both;
+}
+
+.box-1 {
+  background-color: #333;
+  color: #fff;
+
+  border-right: 5px red solid;
+  border-left: 5px red solid;
+  border-top: 5px red solid;
+  border-bottom: 5px red solid;
+  /* in khat mosavi ba 4 khatte bala ast */
+  border: 5px red solid;
+
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+
+  padding: 20px;
+  padding: 0px 20px; /* chizi k baraye padding ejra mishe, in khat has chon akharin taghir ejra mishe hamishe */
+
+  margin-top: 20px;
+}
+/* Padding & Margin:
+padding mishe fasele border nesbat b object ya contenti k dakhelesh has. dar vaghe mishe vasele ye dakheli.
+margin mishe fasele border nesbat b birun va object ha o content haye biruni. faslee ye birunie border mishe margin. */
+
+#heading-1 {
+  font-family: tahoma;
+  font-weight: 800;
+  font-style: italic;
+  text-decoration: underline; /* yek underline mikeshe zire elemente mowrede nazar (hamoo Hello world) */
+  text-transform: uppercase; /* horoofe element ro upperCase mikone */
+  letter-spacing: 7px; /* ijade fasele beine horoof */
+  word-spacing: 16px; /* ijade fasele beine kalamat */
+}
+
+.box-2 {
+  border: 3px dotted #ccc;
+  padding: 20px;
+  margin: 20px 0px;
+}
+
+.categories {
+  border: 1px #ccc solid;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+/* faghat mikhasim tage h2 k too categories has ro biarim vasat bara hamin intori select krdim. */
+.categories h2 {
+  text-align: center;
+}
+
+/* faghat tage ul k tooye categories bood ro khasim style bedim pas intori select kardim. */
+.categories ul {
+  padding: 0px;
+  padding-left: 20px;
+  list-style: square;
+  /* list-style:none; */
+}
+
+.categories li {
+  padding-bottom: 6px;
+  border-bottom: 1px dotted #333;  /* too ghesmate categorye site, zire har category ye khat keshide */
+  list-style-image: url(check.png);  /* in ax b onvane ghesmate poshte list entekhab shode k b soorate defaulte dott has */
+}
+
+.my-form {
+  padding: 20px;    /* az 4tarafe form, andaze ye 20px fasele dad */
+}
+
+.my-form .form-group {
+  padding-bottom: 15px;
+}
+
+.my-form label {
+  display: block;   /* ghesmate label ro select karde o har chizi k khaste biare roo safhe, az khatte jadid shoroo karde k in baes mishe ghesmat haye input biofte zire label haye ma */
+}
+
+
+/* mikhaym hameye input haro bozorg konim amma ghesmate Message typesh input nis
+va ghesmate dokme ye Submit ham input has o kollan mirize b ham.
+pas migim input haii k text migiran (k submit hazf she) va
+onai k tage textarea daran (k message ham biad jozvesh */
+.my-form input[type="text"],
+.my-form textarea {
+  padding: 8px;
+  width: 100%;
+}
+
+
+/* ba komake float omadim 3ta matn ro kenare ham chidim (b jaye zire hami)
+va width ham chon 3ta matn dashtim adadi behesh dadim k 3tasho baramoon jaa bede,
+yaani goftim   (100 / 3 = 33.3333...)   k khob intori neveshtimesh. */
+.block {
+  float: left;
+  width: 33.3%;
+  border: 1px solid #ccc;
+  padding: 10px;
+
+  box-sizing: border-box;   /* agar in khatt nabashe, b khatere inke ma border va padding darim,
+  3ta matnemoon kenare ham gharar nmigire o yekish miofte paiin o mire zire baghiash.
+  in khat code baraye in has k on chand pixele ezafe e k tooye border o padding dadim
+  o too width mohasebe nakardim, in khat code baramoon handel mikone. */
+}
+
+
+/* ------------------------------------------------------------------------------- */
+
+/* in 2 ghesmat tamrine gharar gereftane 2ta element ba size haye mokhtalef
+dar kenare ham dg hask ba Float va Width va Box-Sizing toonesim handelesh konim */
+#main-block {
+  float: left;
+  width: 70%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+#slidbar {
+  float: right;
+  width: 30%;
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  box-sizing: border-box;
+}
+/* ------------------------------------------------------------------------------- */
+
+
+.fix-me {
+  position: fixed;  /* in ghesmat bareaye on dokme sabete kenare site has k ba in khatt fix shode o tekoon nemikhore */
+  top: 400px;
+}
